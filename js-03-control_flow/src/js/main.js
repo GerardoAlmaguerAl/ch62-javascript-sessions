@@ -41,3 +41,16 @@
     else condición;   
 
 */
+
+let isActive = true;
+
+if (isActive === true) console.log("El usuario está activo");
+if (isActive == true) console.log("El usuario está activo");
+
+if (isActive === true) {
+    console.log("El usuario está activo");
+}
+
+if (isActive) {
+    console.log("El usuario está activo");
+}
