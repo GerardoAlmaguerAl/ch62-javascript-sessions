@@ -200,3 +200,13 @@ console.log(getWeather(88));
   }
 
 */
+
+// Code for displaying images based on happiness
+let usermood = prompt("¿Estás feliz? Responde true o false:");
+ const img = document.getElementById("dino");
+
+if (usermood === "true") {
+            img.src = "/public/images/dino.jpg";  
+        } else {
+            img.src = "/public/images/dino-emo.png";   
+        }
