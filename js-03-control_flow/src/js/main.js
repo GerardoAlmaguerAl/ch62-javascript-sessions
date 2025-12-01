@@ -210,3 +210,68 @@ if (usermood === "true") {
         } else {
             img.src = "/public/images/dino-emo.png";   
         }
+
+
+        /*
+ Refactorizar la función getWeather usando switch-case
+*/
+//const getWeatherSwitch=(codigo)=>
+const getWeatherSwitch = (codigo) => {
+    let message;
+    switch (codigo) {
+        case 0:
+            message = "Clear Sky";
+            break;
+        case 1:
+        case 2:
+        case 3:
+            message = "Mainly clear, partly cloudy, and overcast";
+            break;
+        case 45:
+        case 48:
+            message = "Fog and depositing rime fog";
+            break;
+        default:
+            message = "no definido";
+            break;
+    }
+    return message;
+}
+/*
+const getWeatherSwitch2 = (codigo) => {
+    switch (codigo) {
+        case 0:
+            return("Clear Sky");
+        case 1:
+        case 2:
+        case 3:
+            return = "Mainly clear, partly cloudy, and overcast";
+        case 45:
+        case 48:
+            message = "Fog and depositing rime fog";
+            break;
+        default:
+            message = "no definido";
+            break;
+    }
+    return message;
+}
+
+
+console.log(getWeatherSwitch(3)); 
+*/
+/*
+
+ Realizar una función que reciba un número y retorne
+
+ "Par" si el número es par o "Impar" si el número es impar.
+
+ Usar el operador ternario.
+
+ FUncion operador ternario
+*/
+const checkEvenOddNumber = number => {
+    return number%2 === 0 ? "Even" : "Odd";
+}
+
+console.log(checkEvenOddNumber(7));
